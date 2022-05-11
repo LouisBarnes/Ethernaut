@@ -5,6 +5,7 @@ pragma solidity ^0.8.0;
 
 // Although it was not required, I have imported SafeMath to ensure good practice is used.
 import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/3bdf4bfd29b145288ec741bef259a384007ed5cf/contracts/utils/math/SafeMath.sol';
+// Import the original contract that is running 0.8.0 or above and using the correct import URL for SafeMath
 import './CoinFlip.sol';
 
 contract GuessCoinFlip {
