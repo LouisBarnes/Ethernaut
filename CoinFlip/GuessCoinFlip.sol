@@ -17,7 +17,6 @@ contract GuessCoinFlip {
   }
 
   function flip() public returns (bool){
-    // You can use the exact code from the target contract as this is also using SafeMath.
     uint256 GuessBlockValue = uint256(blockhash(block.number.sub(1)));
     uint256 flippedCoin = GuessBlockValue.div(FACTOR);
     bool side = flippedCoin == 1 ? true : false;
